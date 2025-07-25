@@ -1,0 +1,108 @@
+
+/* Basic Reset */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Skip Link - only visible on focus */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 10px;
+  padding: 8px;
+  background: #000;
+  color: #fff;
+  z-index: 1000;
+}
+
+/* Navigation styling using flex */
+nav {
+  background-color: #2c3e50;
+  padding: 10px;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+.nav li {
+  margin: 0 15px;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav a:hover {
+  color: #f1c40f;
+  text-decoration: underline;
+}
+
+/* Image styling with box model */
+.styled-img {
+  max-width: 95%;
+  border: 3px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+.styled-img:hover {
+  transform: scale(1.05);
+}
+
+/* Grid layout */
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Flex layout */
+.flex-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* nth-child styling */
+.grid-gallery figure:nth-child(even) img {
+  border-radius: 20px;
+}
+.grid-gallery figure:nth-child(odd) img {
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  margin-top: 20px;
+}
+
+/* Customizations */
+
+header h1 {
+  padding: 0 25px;
+}
+
+#main {
+  padding: 10px 25px;
+}
